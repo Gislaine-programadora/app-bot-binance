@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 Bot Binance
 
-## Getting Started
+Um bot de trading integrado com a **Binance**, desenvolvido em **Next.js/React + TypeScript** e hospedado na [Vercel](https://vercel.com).
+O projeto tem como objetivo auxiliar operações automatizadas de trade com uma interface simples e responsiva.
 
-First, run the development server:
+🔗 **Deploy:** [app-bot-binance.vercel.app](https://app-bot-binance.vercel.app/)
+
+---
+
+## 🚀 Tecnologias
+
+* [Next.js](https://nextjs.org/) — Framework React para SSR e SSG
+* [TypeScript](https://www.typescriptlang.org/) — Tipagem estática
+* [TailwindCSS](https://tailwindcss.com/) — Estilização rápida e moderna
+* [Binance API](https://binance-docs.github.io/apidocs/) — Integração para operações de trade
+* [Vercel](https://vercel.com/) — Deploy e hospedagem
+
+---
+
+## 📂 Estrutura de Pastas
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+ ├─ app/                # Rotas App Router (Next.js 13+)
+ ├─ components/         # Componentes reutilizáveis
+ │   ├─ response-logger.tsx  # Logger de respostas
+ ├─ pages/api/          # Rotas de API (proxy, logger, etc.)
+ ├─ styles/             # Estilos globais
+ └─ public/             # Arquivos estáticos (JSON, assets, etc.)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Como rodar localmente
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# 1. Clone o repositório
+git clone https://github.com/SEU_USUARIO/bot-binance.git
+cd bot-binance
 
-## Learn More
+# 2. Instale dependências
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# 3. Execute em modo desenvolvimento
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 4. Build para produção
+npm run build
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔑 Variáveis de Ambiente
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Crie um arquivo `.env.local` na raiz do projeto com:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+BINANCE_API_KEY=suachaveaqui
+BINANCE_API_SECRET=suasecretaqui
+NEXT_PUBLIC_API_URL=https://api.binance.com
+```
+
+> ⚠️ **Nunca exponha suas chaves privadas em repositórios públicos.**
+
+---
+
+## 🛠️ Funcionalidades
+
+* Conexão com API da Binance
+* Registro de respostas com `ResponseLogger`
+* Painel básico para operações de trade
+* Deploy contínuo via Vercel
+
+---
+
+## 📜 Licença
+
+Este projeto está sob a licença MIT.
+Sinta-se livre para usar, modificar e distribuir.
+
+---
+
+### 👩‍💻 Desenvolvedora
+
+**Gislaine Cristina** — Full Stack & DevOps Engineer
+📧 [gislainelophes@gmail.com](mailto:gislainelophes@gmail.com)
+
+
+
